@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DGenePlayerConfigure Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">DGenePlayerSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">叠境数字科技（上海）有限公司</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/dgenePlayerAuthorityStatus">+ dgenePlayerAuthorityStatus</option>
+		
+		<option value="//api/name/initWithAppKey:token:packageName:completeBlock:">+ initWithAppKey:token:packageName:completeBlock:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DGenePlayerConfigure Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DGenePlayerConfigure.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithAppKey:token:packageName:completeBlock:" title="initWithAppKey:token:packageName:completeBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAppKey:token:packageName:completeBlock:">+&nbsp;initWithAppKey:token:packageName:completeBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>配置DGenePlayerSDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initWithAppKey:(NSString *)<em>appKey</em> token:(NSString *)<em>token</em> packageName:(NSString *)<em>packageName</em> completeBlock:(void ( ^ ) ( NSError *_Nullable error ))<em>completeBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appKey</code></th>
+						<td><p>获取到的appKey</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>获取到的token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packageName</code></th>
+						<td><p>app对应的Bundle identifier</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method   <a href="#//api/name/dgenePlayerAuthorityStatus">dgenePlayerAuthorityStatus</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGenePlayerConfigure.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dgenePlayerAuthorityStatus" title="dgenePlayerAuthorityStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dgenePlayerAuthorityStatus">+&nbsp;dgenePlayerAuthorityStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDK授权状态；由于我们的播放器对设备的性能要求较高，所以为了用户体验，SDK提供了一个过滤的接口可供开发人员选择使用；开发人员可以在功能入口处通过该API来限制用户能否使用该功能，当然开发不用这个API，也可以自己来设置限制的条件;但即使不用该API，SDK同样也会在播放器初始化的时候验证appKey 和 token；</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (DGenePlayerAuthority)dgenePlayerAuthorityStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method   dgenePlayerAuthorityStatus</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGenePlayerConfigure.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 叠境数字科技（上海）有限公司. All rights reserved. Updated: 2020-12-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DGInsertPlayerView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">DGenePlayerSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">叠境数字科技（上海）有限公司</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/bFull">bFull</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/muted">muted</option>
+		
+		<option value="//api/name/player">player</option>
+		
+		<option value="//api/name/playerAsset">playerAsset</option>
+		
+		<option value="//api/name/playerItem">playerItem</option>
+		
+		<option value="//api/name/playerOutput">playerOutput</option>
+		
+		<option value="//api/name/playerStatus">playerStatus</option>
+		
+		<option value="//api/name/videoGravity">videoGravity</option>
+		
+		<option value="//api/name/volume">volume</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithFrame:withURL:withConfigData:withVideoLayoutType:">- initWithFrame:withURL:withConfigData:withVideoLayoutType:</option>
+		
+		<option value="//api/name/isPlaying">- isPlaying</option>
+		
+		<option value="//api/name/loadVideoWithURL:withConfigData:withVideoLayoutType:">- loadVideoWithURL:withConfigData:withVideoLayoutType:</option>
+		
+		<option value="//api/name/pause">- pause</option>
+		
+		<option value="//api/name/play">- play</option>
+		
+		<option value="//api/name/playImmediatelyAtRate:">- playImmediatelyAtRate:</option>
+		
+		<option value="//api/name/replay">- replay</option>
+		
+		<option value="//api/name/resetEnabledAngelSwitch:">- resetEnabledAngelSwitch:</option>
+		
+		<option value="//api/name/resetGestureExtentPanValue:">- resetGestureExtentPanValue:</option>
+		
+		<option value="//api/name/seekToTime:completionHandler:">- seekToTime:completionHandler:</option>
+		
+		<option value="//api/name/thumbnailImageAtCurrentTime">- thumbnailImageAtCurrentTime</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DGInsertPlayerView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DGInsertPlayerView.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithFrame:withURL:withConfigData:withVideoLayoutType:" title="initWithFrame:withURL:withConfigData:withVideoLayoutType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFrame:withURL:withConfigData:withVideoLayoutType:">&ndash;&nbsp;initWithFrame:withURL:withConfigData:withVideoLayoutType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method   initWithFrame:withURL:withConfigData:withVideoLayoutType:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithFrame:(CGRect)<em>frame</em> withURL:(nullable NSURL *)<em>URL</em> withConfigData:(nullable NSData *)<em>configData</em> withVideoLayoutType:(DGVideoLayoutType)<em>layoutType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>实例初始化时的CGRect；</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URL</code></th>
+						<td><p>视频源地址，可以为nil，为nil时将只创建DGInsertPlayerView实例；</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configData</code></th>
+						<td><p>拍摄视频的相机设置参数二进制数据，可以为nil。如果URL不为nil，configData为nil，将会影响插帧画面的显示；</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>layoutType</code></th>
+						<td><p>视频画面的拼接方式，目前只支持DGVideoLayoutType列举的四种拼接方式，具体的拼接细节请参考SDK接入说明；</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回一个DGInsertPlayerView实例，</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method   initWithFrame:withURL:withConfigData:withVideoLayoutType:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadVideoWithURL:withConfigData:withVideoLayoutType:" title="loadVideoWithURL:withConfigData:withVideoLayoutType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadVideoWithURL:withConfigData:withVideoLayoutType:">&ndash;&nbsp;loadVideoWithURL:withConfigData:withVideoLayoutType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频源地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadVideoWithURL:(nonnull NSURL *)<em>URL</em> withConfigData:(nonnull NSData *)<em>configData</em> withVideoLayoutType:(DGVideoLayoutType)<em>layoutType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URL</code></th>
+						<td><p>视频源地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configData</code></th>
+						<td><p>拍摄视频的相机设置参数二进制数据；</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>layoutType</code></th>
+						<td><p>视频画面的拼接方式，目前只支持DGVideoLayoutType列举的四种拼接方式，具体的拼接细节请参考SDK接入说明；</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="method-title"><code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)play</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        play</p><p>相当于以1.0的播放速率开始播放。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        pause</p><p>相当于将当前播放器的播放速率设置为0.0。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replay" title="replay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replay">&ndash;&nbsp;replay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重新开始播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)replay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        re<a href="#//api/name/play">play</a></p><p>会使播放器的播放速率设置为1.0，当前播放时长设置为0.0。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isPlaying" title="isPlaying"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isPlaying">&ndash;&nbsp;isPlaying</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回当前播放器是否处在播放状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isPlaying</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        isPlaying</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playImmediatelyAtRate:" title="playImmediatelyAtRate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playImmediatelyAtRate:">&ndash;&nbsp;playImmediatelyAtRate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>以指定的速率立即播放可用的媒体数据。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playImmediatelyAtRate:(float)<em>rate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        playImmediatelyAtRate:</p><p>详情请参考AVPlayer中的playImmediatelyAtRate:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/seekToTime:completionHandler:" title="seekToTime:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/seekToTime:completionHandler:">&ndash;&nbsp;seekToTime:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>跳到指定的时间点开始播放；</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)seekToTime:(double)<em>time</em> completionHandler:(void ( ^ ) ( BOOL finished ))<em>completionHandler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        seekToTime:completionHandler:</p><p>详情请参考AVPlayer中的seekToTime:（若该API不能满足项目需求，您可以通过抛出的AVPlayer实例自行选择其他的API）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetEnabledAngelSwitch:" title="resetEnabledAngelSwitch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetEnabledAngelSwitch:">&ndash;&nbsp;resetEnabledAngelSwitch:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否允许旋转视角</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetEnabledAngelSwitch:(BOOL)<em>enabledAngelSwitch</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabledAngelSwitch</code></th>
+						<td><p>YES：可进行视角旋转；NO：不可以进行视角旋转；</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method     resetEnabledAngelSwitch</p><p>设置为NO后左右滑动将不再改变视角，左右滑动时SDK也不再进行插帧的操作，默认为YES可以滑动视角。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetGestureExtentPanValue:" title="resetGestureExtentPanValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetGestureExtentPanValue:">&ndash;&nbsp;resetGestureExtentPanValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换视角的灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetGestureExtentPanValue:(NSInteger)<em>extentPanValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>extentPanValue</code></th>
+						<td><p>大于0的整数值，该值越大滑动相同的距离所切换的角度越小；</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method     resetGestureExtentPanValue</p><p>表示：滑动多少个像素会切换一个视角，默认为30。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/thumbnailImageAtCurrentTime" title="thumbnailImageAtCurrentTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/thumbnailImageAtCurrentTime">&ndash;&nbsp;thumbnailImageAtCurrentTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前时刻当前视角的截图</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)thumbnailImageAtCurrentTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method        thumbnailImageAtCurrentTime</p><p>返回的为停止滑动视角时的非插帧数据。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, nullable) id&lt;DGInsertPlayerViewDelegate&gt; delegate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/player" title="player"></a>
+	<h3 class="method-title"><code><a href="#//api/name/player">&nbsp;&nbsp;player</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) AVPlayer *player</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerAsset" title="playerAsset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerAsset">&nbsp;&nbsp;playerAsset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) AVURLAsset *playerAsset</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerItem" title="playerItem"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerItem">&nbsp;&nbsp;playerItem</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) AVPlayerItem *playerItem</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerOutput" title="playerOutput"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerOutput">&nbsp;&nbsp;playerOutput</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) AVPlayerItemVideoOutput *playerOutput</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerStatus" title="playerStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerStatus">&nbsp;&nbsp;playerStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>记录播放器状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) DGenePlayerStatus *playerStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property playerStatus</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/videoGravity" title="videoGravity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/videoGravity">&nbsp;&nbsp;videoGravity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置视频如何充满视图，默认为AVLayerVideoGravityResizeAspect（详情请参考AVLayerVideoGravity）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AVLayerVideoGravity videoGravity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property videoGravity</p><p>该参数只对全屏时有效，半屏时默认为AVLayerVideoGravityResizeAspect</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bFull" title="bFull"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bFull">&nbsp;&nbsp;bFull</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否设置全屏，bFull值改变后会重新刷新player中的frame。所以在设置完player的frame后，请设置相应的bFull值；</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL bFull</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property bFull</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/volume" title="volume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/volume">&nbsp;&nbsp;volume</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音量0-1.0(详情请参考AVPlayer.volume说明)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float volume</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property volume</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/muted" title="muted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否静音(详情请参考AVPlayer.muted说明)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL muted</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property muted</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DGInsertPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 叠境数字科技（上海）有限公司. All rights reserved. Updated: 2020-12-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
